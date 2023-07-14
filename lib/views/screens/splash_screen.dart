@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_task_manager/gen/assets.gen.dart';
+import 'package:getx_task_manager/routes/name_routes.dart';
 import 'package:getx_task_manager/utils/colors.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 2))
-        .then((value) => Get.offNamed('/onboarding'));
+        .then((value) => Get.offNamed(NameRoutes.onBoardingScreen));
   }
 
   @override

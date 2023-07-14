@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_task_manager/views/screens/onborading_screen.dart';
+import 'package:getx_task_manager/routes/app_routes.dart';
+import 'package:getx_task_manager/views/screens/onboarding_screen.dart';
 import 'package:getx_task_manager/views/screens/splash_screen.dart';
 
 void main() {
@@ -19,11 +20,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: '/',
-      getPages: [
-        GetPage(name: '/', page: () => const SplashScreen(),transition: Transition.zoom),
-        GetPage(name: '/onboarding', page: () => const OnboardingScreen()),
-      ],
+      initialRoute: AppRoutes.initialRoute,
+      getPages: AppRoutes.routes,
     );
   }
 }
