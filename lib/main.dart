@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_task_manager/views/onborading_screen.dart';
-import 'package:getx_task_manager/views/splash_screen.dart';
+import 'package:getx_task_manager/views/screens/onborading_screen.dart';
+import 'package:getx_task_manager/views/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
