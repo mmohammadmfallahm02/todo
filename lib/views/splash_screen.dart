@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_task_manager/gen/assets.gen.dart';
+import 'package:getx_task_manager/utils/colors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -20,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff8875FF),
+      backgroundColor: AppColor.primaryAppColor,
       body: Center(
         child: Image.asset(
           Assets.images.logoNoBackground.path,
