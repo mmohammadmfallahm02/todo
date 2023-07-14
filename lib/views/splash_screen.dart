@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:getx_task_manager/gen/assets.gen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -12,7 +13,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 2)).then((value) => null);
+    Future.delayed(const Duration(seconds: 2))
+        .then((value) => Get.offNamed('/onboarding'));
   }
 
   @override
