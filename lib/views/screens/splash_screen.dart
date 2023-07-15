@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:getx_task_manager/gen/assets.gen.dart';
 import 'package:getx_task_manager/routes/name_routes.dart';
 import 'package:getx_task_manager/utils/colors.dart';
+import 'package:getx_task_manager/utils/size_config.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -26,8 +27,8 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Image.asset(
           Assets.images.logoNoBackground.path,
-          width: 300,
-          height: 300,
+          width: SizeConfig.blockSizeHorizontal*70,
+          height: SizeConfig.blockSizeVertical*70,
         ),
       ),
     );
