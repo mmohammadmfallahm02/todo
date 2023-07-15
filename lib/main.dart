@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:getx_task_manager/routes/app_routes.dart';
 import 'package:getx_task_manager/utils/colors.dart';
+import 'package:getx_task_manager/utils/style.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -25,9 +26,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
+              padding: const MaterialStatePropertyAll(
+                  EdgeInsets.symmetric(vertical: 15, horizontal: 30)),
               backgroundColor:
-                  MaterialStateProperty.all(AppColor.primaryAppColor),
-              shape: MaterialStateProperty.all(const RoundedRectangleBorder(
+                  MaterialStatePropertyAll(AppColor.primaryAppColor),
+              shape: const MaterialStatePropertyAll(RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(8))))),
         ),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

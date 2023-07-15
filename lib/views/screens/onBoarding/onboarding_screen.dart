@@ -19,7 +19,7 @@ class OnboardingScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 32),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SizedBox(
               height: SizeConfig.screenHeight * 0.7,
@@ -55,29 +55,27 @@ class OnboardingScreen extends StatelessWidget {
                 },
               ),
             ),
-            Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'BACK',
-                        style: MyDefaultTextStyle.getRegularStyle(
-                            color: AppColor.darkSecondaryTextButtonAppColor,
-                            fontSize: FontSize.c16),
-                      )),
-                  ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        'NEXT',
-                        style: MyDefaultTextStyle.getRegularStyle(
-                            color: AppColor.darkSecondaryTextButtonAppColor,
-                            fontSize: FontSize.c16),
-                      ))
-                ],
-              ),
-            )
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'BACK',
+                      style: MyDefaultTextStyle.getRegularStyle(
+                          color: AppColor.darkSecondaryTextButtonAppColor,
+                          fontSize: FontSize.c16),
+                    )),
+                ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      'NEXT',
+                      style: MyDefaultTextStyle.getRegularStyle(
+                          color: Colors.white, fontSize: FontSize.c16),
+                    )),
+              ],
+            ),
+            const SizedBox()
           ],
         ),
       ),
