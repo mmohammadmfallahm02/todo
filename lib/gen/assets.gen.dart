@@ -16,8 +16,18 @@ class $AssetsImagesGen {
   AssetGenImage get logoNoBackground =>
       const AssetGenImage('assets/images/logo-no-background.png');
 
+  /// File path: assets/images/onBoarding_pic_1.svg
+  String get onBoardingPic1 => 'assets/images/onBoarding_pic_1.svg';
+
+  /// File path: assets/images/onBoarding_pic_2.svg
+  String get onBoardingPic2 => 'assets/images/onBoarding_pic_2.svg';
+
+  /// File path: assets/images/onBoarding_pic_3.svg
+  String get onBoardingPic3 => 'assets/images/onBoarding_pic_3.svg';
+
   /// List of all assets
-  List<AssetGenImage> get values => [logoNoBackground];
+  List<dynamic> get values =>
+      [logoNoBackground, onBoardingPic1, onBoardingPic2, onBoardingPic3];
 }
 
 class Assets {
