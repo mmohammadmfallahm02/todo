@@ -7,9 +7,11 @@ abstract class AppRoutes {
   static String initialRoute = NameRoutes.splashScreen;
   static List<GetPage> routes = [
     GetPage(
-        name: '/',
+        name: NameRoutes.splashScreen,
         page: () => const SplashScreen(),
         transition: Transition.zoom),
-    GetPage(name: '/onboarding', page: () => const OnboardingScreen()),
+    GetPage(
+        name: NameRoutes.onBoardingScreen,
+        page: () => const OnboardingScreen()),
   ];
 }

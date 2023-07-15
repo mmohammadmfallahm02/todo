@@ -1,4 +1,4 @@
 abstract class NameRoutes {
   static String splashScreen = '/';
-  static String onBoardingScreen = '/';
+  static String onBoardingScreen = '/onboarding';
 }
