@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:getx_task_manager/routes/app_routes.dart';
-import 'package:getx_task_manager/views/screens/onboarding_screen.dart';
-import 'package:getx_task_manager/views/screens/splash_screen.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      systemNavigationBarColor: Colors.transparent,
+      systemNavigationBarDividerColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
+      statusBarBrightness: Brightness.light,
+      statusBarColor: Colors.transparent));
   runApp(const MyApp());
 }
 
