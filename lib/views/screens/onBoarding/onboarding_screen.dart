@@ -16,39 +16,69 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.darkBackgroundAppColor,
       appBar: const OnBoardingAppBar(),
-      body: SizedBox(
-        height: SizeConfig.screenHeight * 0.7,
-        child: PageView.builder(
-          itemCount: 3,
-          itemBuilder: (context, index) {
-            final pageItem = controller.pages[index];
-            return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 32),
-              child: Column(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 32),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            SizedBox(
+              height: SizeConfig.screenHeight * 0.7,
+              child: PageView.builder(
+                itemCount: 3,
+                itemBuilder: (context, index) {
+                  final pageItem = controller.pages[index];
+                  return Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SvgPicture.asset(
+                        pageItem.image,
+                        height: SizeConfig.screenHeight * 0.4,
+                      ),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        pageItem.title,
+                        style: MyDefaultTextStyle.getBoldStyle(
+                            fontSize: FontSize.c32,
+                            color: AppColor.darkPrimaryTextButtonAppColor),
+                      ),
+                      Text(
+                        pageItem.description,
+                        textAlign: TextAlign.center,
+                        style: MyDefaultTextStyle.getRegularStyle(
+                            fontSize: FontSize.c16,
+                            color: AppColor.darkPrimaryTextButtonAppColor),
+                      ),
+                    ],
+                  );
+                },
+              ),
+            ),
+            Expanded(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SvgPicture.asset(
-                    pageItem.image,
-                    height: SizeConfig.screenHeight * 0.4,
-                  ),
-                  const SizedBox(height: 5,),
-                  Text(
-                    pageItem.title,
-                    style: MyDefaultTextStyle.getBoldStyle(
-                        fontSize: FontSize.c32,
-                        color: AppColor.darkPrimaryTextButtonAppColor),
-                  ),
-                  Text(
-                    pageItem.description,
-                    textAlign: TextAlign.center,
-                    style: MyDefaultTextStyle.getRegularStyle(
-                        fontSize: FontSize.c16,
-                        color: AppColor.darkPrimaryTextButtonAppColor),
-                  ),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'BACK',
+                        style: MyDefaultTextStyle.getRegularStyle(
+                            color: AppColor.darkSecondaryTextButtonAppColor,
+                            fontSize: FontSize.c16),
+                      )),
+                  ElevatedButton(
+                      onPressed: () {},
+                      child: Text(
+                        'NEXT',
+                        style: MyDefaultTextStyle.getRegularStyle(
+                            color: AppColor.darkSecondaryTextButtonAppColor,
+                            fontSize: FontSize.c16),
+                      ))
                 ],
               ),
-            );
-          },
+            )
+          ],
         ),
       ),
     );
