@@ -5,11 +5,10 @@ import 'package:getx_task_manager/controllers/onboarding_controller.dart';
 import 'package:getx_task_manager/utils/colors.dart';
 import 'package:getx_task_manager/utils/size_config.dart';
 import 'package:getx_task_manager/utils/style.dart';
-import 'package:getx_task_manager/views/screens/onBoarding/components/onboarding_appbar.dart';
+import 'package:getx_task_manager/views/screens/onBoarding/components/onboarding_appBar.dart';
 
-class OnboardingScreen extends StatelessWidget {
-  OnboardingScreen({super.key});
-  final OnboardingController controller = Get.find<OnboardingController>();
+class OnboardingScreen extends GetView<OnboardingController> {
+  const OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
