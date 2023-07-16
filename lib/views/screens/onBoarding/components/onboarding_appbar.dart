@@ -19,7 +19,7 @@ class OnBoardingAppBar extends StatelessWidget implements PreferredSizeWidget {
                 child: Text(
                   'SKIP',
                   style: MyDefaultTextStyle.getRegularStyle(
-                      color: AppColor.darkSecondaryTextButtonAppColor,
+                      color: AppColor.lightSecondaryTextButtonAppColor,
                       fontSize: FontSize.c16),
                 ))
           ],

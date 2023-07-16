@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:getx_task_manager/routes/app_routes.dart';
 import 'package:getx_task_manager/utils/colors.dart';
-import 'package:getx_task_manager/utils/style.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(

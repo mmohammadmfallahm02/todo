@@ -14,15 +14,15 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.darkBackgroundAppColor,
+      backgroundColor: AppColor.lightBackgroundAppColor,
       appBar: const OnBoardingAppBar(),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 32),
+        padding: const EdgeInsets.fromLTRB(32, 0, 32, 32),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SizedBox(
-              height: SizeConfig.screenHeight * 0.7,
+              height: SizeConfig.screenHeight * 0.66,
               child: PageView.builder(
                 itemCount: 3,
                 itemBuilder: (context, index) {
@@ -34,21 +34,19 @@ class OnboardingScreen extends StatelessWidget {
                         pageItem.image,
                         height: SizeConfig.screenHeight * 0.4,
                       ),
-                      const SizedBox(
-                        height: 5,
-                      ),
+                      const SizedBox(),
                       Text(
                         pageItem.title,
                         style: MyDefaultTextStyle.getBoldStyle(
                             fontSize: FontSize.c32,
-                            color: AppColor.darkPrimaryTextButtonAppColor),
+                            color: AppColor.lightPrimaryTextButtonAppColor),
                       ),
                       Text(
                         pageItem.description,
                         textAlign: TextAlign.center,
                         style: MyDefaultTextStyle.getRegularStyle(
                             fontSize: FontSize.c16,
-                            color: AppColor.darkPrimaryTextButtonAppColor),
+                            color: AppColor.lightPrimaryTextButtonAppColor),
                       ),
                     ],
                   );
@@ -63,7 +61,7 @@ class OnboardingScreen extends StatelessWidget {
                     child: Text(
                       'BACK',
                       style: MyDefaultTextStyle.getRegularStyle(
-                          color: AppColor.darkSecondaryTextButtonAppColor,
+                          color: AppColor.lightSecondaryTextButtonAppColor,
                           fontSize: FontSize.c16),
                     )),
                 ElevatedButton(
@@ -75,7 +73,6 @@ class OnboardingScreen extends StatelessWidget {
                     )),
               ],
             ),
-            const SizedBox()
           ],
         ),
       ),
