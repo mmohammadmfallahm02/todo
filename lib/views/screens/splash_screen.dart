@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_task_manager/controllers/splash_controller.dart';
 import 'package:getx_task_manager/gen/assets.gen.dart';
-import 'package:getx_task_manager/utils/colors.dart';
-import 'package:getx_task_manager/utils/size_config.dart';
+import 'package:getx_task_manager/components/colors.dart';
+import 'package:getx_task_manager/components/size_config.dart';
 
 class SplashScreen extends StatelessWidget {
   SplashScreen({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getx_task_manager/gen/fonts.gen.dart';
-import 'package:getx_task_manager/utils/size_config.dart';
+import 'package:getx_task_manager/components/size_config.dart';
 
 abstract class FontConstants {
   static const String defaultFontFamily = FontFamily.lato;
