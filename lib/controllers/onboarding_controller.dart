@@ -3,11 +3,7 @@ import 'package:getx_task_manager/gen/assets.gen.dart';
 import 'package:getx_task_manager/models/onboarding_pageview_model.dart';
 
 class OnboardingController extends GetxController {
-  List<PageData> get pages => PageViewData.pages;
-}
-
-class PageViewData {
-  static List<PageData> pages = [
+  final List<PageData> pages = [
     PageData(
       image: Assets.images.onBoardingPic1,
       title: 'Manage your tasks',
@@ -26,6 +22,12 @@ class PageViewData {
       description:
           'You can organize your daily tasks by adding your tasks into separate categories',
     ),
-    // Add more PageData objects for additional pages
   ];
+  // List<PageData> get pages => PageViewData.pages;
 }
+
+// class PageViewData {
+//   static List<PageData> pages = [
+//     // Add more PageData objects for additional pages
+//   ];
+// }
