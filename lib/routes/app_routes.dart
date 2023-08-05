@@ -15,7 +15,7 @@ abstract class AppRoutes {
         transition: Transition.zoom),
     GetPage(
         name: NameRoutes.onBoardingScreen,
-        page: () => OnboardingScreen(),
+        page: () => const OnboardingScreen(),
         binding: OnBoardingBinding()),
   ];
 }

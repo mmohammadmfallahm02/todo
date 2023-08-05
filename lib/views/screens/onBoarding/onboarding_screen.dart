@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:getx_task_manager/components/theme.dart';
 import 'package:getx_task_manager/controllers/onboarding_controller.dart';
-import 'package:getx_task_manager/components/colors.dart';
 import 'package:getx_task_manager/components/size_config.dart';
 import 'package:getx_task_manager/components/style.dart';
 import 'package:getx_task_manager/views/screens/onBoarding/components/onboarding_appBar.dart';
