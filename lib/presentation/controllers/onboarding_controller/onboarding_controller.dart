@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_task_manager/constant/app_text.dart';
 import 'package:getx_task_manager/gen/assets.gen.dart';
-import 'package:getx_task_manager/models/onboarding_pageview_model.dart';
+import 'package:getx_task_manager/data/models/onboarding_pageview_model.dart';
 
 class OnboardingController extends GetxController {
   // <--------------------------variables-------------------------->

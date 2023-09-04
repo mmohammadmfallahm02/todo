@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:getx_task_manager/components/style.dart';
-import 'package:getx_task_manager/components/theme.dart';
+import 'package:getx_task_manager/core/utils/resources/style.dart';
+import 'package:getx_task_manager/core/utils/resources/theme.dart';
 
 class OnBoardingAppBar extends StatelessWidget implements PreferredSizeWidget {
   const OnBoardingAppBar({

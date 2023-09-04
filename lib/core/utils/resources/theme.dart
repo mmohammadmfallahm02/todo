@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getx_task_manager/components/style.dart';
+import 'package:getx_task_manager/core/utils/resources/style.dart';
 import 'package:getx_task_manager/gen/fonts.gen.dart';
 
 abstract class AppColor {

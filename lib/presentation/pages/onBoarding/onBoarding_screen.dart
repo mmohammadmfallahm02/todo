@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:getx_task_manager/components/theme.dart';
-import 'package:getx_task_manager/controllers/onboarding_controller.dart';
-import 'package:getx_task_manager/components/size_config.dart';
-import 'package:getx_task_manager/components/style.dart';
-import 'package:getx_task_manager/views/screens/onBoarding/components/onboarding_appBar.dart';
+import 'package:getx_task_manager/core/utils/resources/size_config.dart';
+import 'package:getx_task_manager/core/utils/resources/style.dart';
+import 'package:getx_task_manager/core/utils/resources/theme.dart';
+import 'package:getx_task_manager/presentation/controllers/onboarding_controller/onboarding_controller.dart';
+import 'package:getx_task_manager/presentation/pages/onBoarding/components/onBoarding_appBar.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends GetView<OnboardingController> {

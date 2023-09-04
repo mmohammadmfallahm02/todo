@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:getx_task_manager/routes/name_routes.dart';
+import 'package:getx_task_manager/app/name_routes.dart';
 
 class SplashController extends GetxController {
   void navigateToOnBoarding() {
